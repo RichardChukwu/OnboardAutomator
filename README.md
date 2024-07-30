@@ -1,6 +1,3 @@
-
-
-
 # Onboard Automator
 
 Automate the process of onboarding a new employee into Azure AD and assigning necessary Azure resources without requiring programming.
@@ -15,6 +12,10 @@ Automate the process of onboarding a new employee into Azure AD and assigning ne
 ## Prerequisites
 - Azure subscription
 - Basic knowledge of Azure AD and Logic Apps
+
+### Architecture Diagram
+![Architecture Diagram](https://github.com/RichardChukwu/FSBWebMigration/blob/main/FSB%20webApp%20Architecture.drawio.png)
+
 
 ## Setup Guide
 
