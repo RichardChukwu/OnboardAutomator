@@ -11,7 +11,7 @@ This document provides detailed instructions for setting up and using Onboard Au
 ### Logic App Workflow
 1. Create a new Logic App.
 2. Design the workflow using the Logic App designer.
-3. Import the [workflow JSON file](../src/logic_app_workflow.json).
+3. Import the [workflow JSON file](Logic_App_Workflow.json).
 
 ### Resource Provisioning
 1. Use Azure Resource Manager to automate resource allocation.
