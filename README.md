@@ -14,7 +14,7 @@ Automate the process of onboarding a new employee into Azure AD and assigning ne
 - Basic knowledge of Azure AD and Logic Apps
 
 ### Architecture Diagram
-![Architecture Diagram](Architecture Diagram.jpg)
+![Architecture Diagram](https://github.com/RichardChukwu/OnboardAutomator/blob/f9512a52d4ff3509b3c011e3b226883c8a8eb533/Architecture%20Diagram.jpg)
 
 
 ## Setup Guide
