@@ -1,1 +1,63 @@
+{
+  "definition": {
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "actions": {
+      "Create_User": {
+        "inputs": {
+          "body": {
+            "accountEnabled": true,
+            "displayName": "@triggerBody()['Name']",
+            "mailNickname": "@triggerBody()['Nickname']",
+            "userPrincipalName": "@triggerBody()['Email']",
+            "passwordProfile": {
+              "password": "@triggerBody()['Password']",
+              "forceChangePasswordNextSignIn": true
+            }
+          },
+          "host": {
+            "apiId": "/providers/Microsoft.Web/locations/{region}/managedApis/azureactivedirectory"
+          },
+          "method": "post",
+          "path": "/users"
+        },
+        "runAfter": {},
+        "type": "ApiConnection"
+      },
+      "Send_Email": {
+        "inputs": {
+          "body": {
+            "To": "@triggerBody()['Email']",
+            "Subject": "Welcome to the Company",
+            "Body": "Dear @triggerBody()['Name'], welcome to the team!"
+          },
+          "host": {
+            "apiId": "/providers/Microsoft.Web/locations/{region}/managedApis/office365"
+          },
+          "method": "post",
+          "path": "/v2/Mail"
+        },
+        "runAfter": {
+          "Create_User": ["Succeeded"]
+        },
+        "type": "ApiConnection"
+      }
+    },
+    "triggers": {
+      "When_a_new_email_arrives": {
+        "inputs": {
+          "host": {
+            "apiId": "/providers/Microsoft.Web/locations/{region}/managedApis/office365"
+          },
+          "method": "get",
+          "path": "/v2/Mail/Inbox"
+        },
+        "recurrence": {
+          "frequency": "Minute",
+          "interval": 5
+        },
+        "type": "ApiConnection"
+      }
+    }
+  }
+}
 
