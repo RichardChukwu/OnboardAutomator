@@ -14,7 +14,7 @@ Automate the process of onboarding a new employee into Azure AD and assigning ne
 - Basic knowledge of Azure AD and Logic Apps
 
 ### Architecture Diagram
-![Architecture Diagram](https://github.com/RichardChukwu/FSBWebMigration/blob/main/FSB%20webApp%20Architecture.drawio.png)
+![Architecture Diagram](Architecture Diagram.jpg)
 
 
 ## Setup Guide
