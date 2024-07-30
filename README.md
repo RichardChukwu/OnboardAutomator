@@ -30,7 +30,7 @@ Import the [Logic App Workflow](https://github.com/RichardChukwu/OnboardAutomato
 - Review Azure AD audit logs for user creation and modifications.
 
 ## Documentation
-Detailed documentation is available [here](docs/Onboard_Automator_Documentation.md).
+Detailed documentation is available [here](DOCUMENTATION.md).
 
 ## Contribution
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
