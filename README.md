@@ -1,3 +1,6 @@
+(Architecture Diagram.jpg)
+
+
 # Onboard Automator
 
 Automate the process of onboarding a new employee into Azure AD and assigning necessary Azure resources without requiring programming.
