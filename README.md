@@ -1,4 +1,4 @@
-(Architecture Diagram.jpg)
+
 
 
 # Onboard Automator
