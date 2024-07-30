@@ -19,7 +19,7 @@ Automate the process of onboarding a new employee into Azure AD and assigning ne
 Follow the instructions in [Azure AD Setup Guide](src/azure_ad_setup_guide.md).
 
 ### Step 2: Logic App Workflow Design
-Import the [Logic App Workflow](src/logic_app_workflow.json) into your Azure Logic Apps designer.
+Import the [Logic App Workflow](https://github.com/RichardChukwu/OnboardAutomator/blob/main/Logic%20App%20Workflow.png) into your Azure Logic Apps designer.
 
 ### Step 3: Configuration
 - Configure triggers and actions as per your requirements.
